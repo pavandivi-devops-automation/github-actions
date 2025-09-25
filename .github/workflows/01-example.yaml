@@ -3,10 +3,10 @@ name: HelloWorld
 # when to trigger this pipeline. We can trigger on push or manual or someother events like creating PR, Updating PR, creating branches, creating issues.
 on: [push] # triggers
 jobs: # pipeline. one workflow can have multiple pipelines
-  hello:
+  Hello-First-Job: # This is Title of Job Name
     runs-on: ubuntu-latest # Linux OS. we can have windows or MAC
     steps: # stages
       - name: step1
         run: echo "Hello World"
       - name: step2
-        run: echo "Hellow GitHub Actions"
+        run: echo "Hello GitHub Actions"

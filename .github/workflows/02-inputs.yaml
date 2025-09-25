@@ -24,7 +24,7 @@ on:
         type: environment
         required: true
 jobs:
-  print-tag:
+  inputs-print-tag:
     runs-on: ubuntu-latest
     steps:
       - name: Print the input tag to STDOUT

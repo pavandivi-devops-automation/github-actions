@@ -1,0 +1,13 @@
+name: Conditions
+
+on: [push] 
+jobs: 
+  Hello-Conditions: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: step1
+        if: github.ref == 'refs/heads/feature-**'
+        run: echo "Hello World"
+      - name: step2
+        if: github.ref == 'refs/heads/main'
+        run: echo "Hello GitHub Actions"
